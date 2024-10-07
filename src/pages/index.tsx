@@ -1,7 +1,9 @@
+import { Navbar } from "src/presentation/components";
+
 export default function Home() {
   return (
     <>
-      <h1>Ola</h1>
+      <Navbar />
     </>
   );
 }

@@ -36,7 +36,7 @@ export const Item = styled.li`
   color: ${({ theme }) => theme.colors.info};
 
   padding: 0.6rem 1rem;
-  
+
   &:hover {
     background-color: ${({ theme }) => theme.colors.darkLight};
     transition: ${({ theme }) => theme.transition.default};

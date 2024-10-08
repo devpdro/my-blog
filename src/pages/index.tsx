@@ -1,9 +1,3 @@
-import { Navbar } from "src/presentation/components";
+import { makeHome } from "src/main/factories/pages";
 
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
-}
+export default makeHome;

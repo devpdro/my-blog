@@ -1,5 +1,5 @@
-const lightTheme = {
-  name: "light",
+const darkTheme = {
+  name: "dark",
   colors: {
     primary: "#151718",
     secondary: "#8234E9",
@@ -31,4 +31,4 @@ const lightTheme = {
   },
 };
 
-export default lightTheme;
+export default darkTheme;

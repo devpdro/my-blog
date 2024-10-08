@@ -12,15 +12,15 @@ import * as S from "./navbar-styles";
 interface MenuProps {
   name: string;
   link: string;
-  icon: React.ReactNode;
+  icon: React.ReactNode | string;
 }
 
 const MENU: MenuProps[] = [
-  { name: "Início", link: "/", icon: <AiOutlineHome /> },
-  { name: "Publicações", link: "/publications", icon: <AiOutlineBook /> },
+  { name: "Início", link: "/", icon: "" },
+  { name: "Publicações", link: "/publications", icon: "" },
   { name: "Quem sou eu?", link: "/", icon: <AiOutlineUser /> },
-  { name: "Cursos", link: "/", icon: <AiOutlineContacts /> },
-  { name: "Contato", link: "/", icon: <MdOutlineContactMail /> },
+  { name: "Cursos", link: "/", icon: "" },
+  { name: "Contato", link: "/", icon: "" },
 ];
 
 const Navbar = () => {
@@ -29,12 +29,12 @@ const Navbar = () => {
       <S.Logo>Blog</S.Logo>
       <S.MenuGroup>
         {MENU.map((item, key) => (
-          <S.Menu key={key}>
-            <S.Icon>{item.icon}</S.Icon>
-            <Link href={item.link}>
-            <S.Item >{item.name}</S.Item>
-            </Link>
-          </S.Menu>
+          <Link key={key} href={item.link}>
+            <S.Menu>
+              <S.Icon>{item.icon}</S.Icon>
+              <S.Item>{item.name}</S.Item>
+            </S.Menu>
+          </Link>
         ))}
       </S.MenuGroup>
     </S.Container>

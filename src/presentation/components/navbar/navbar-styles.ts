@@ -27,8 +27,7 @@ export const MenuGroup = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  gap: 0.3rem
-  border
+  gap: 0.3rem border;
 `;
 
 export const Menu = styled.ul`

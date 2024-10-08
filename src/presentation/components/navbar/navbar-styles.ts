@@ -22,18 +22,20 @@ export const Logo = styled.div`
   text-transform: uppercase;
 `;
 
-export const Menu = styled.ul`
+export const MenuGroup = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  gap: 0.5rem;
+  gap: 0.3rem
+  border
 `;
 
-export const Item = styled.li`
+export const Menu = styled.ul`
   border-radius: ${({ theme }) => theme.radii.default};
-  font-size: ${({ theme }) => theme.fontSizes.small};
-  color: ${({ theme }) => theme.colors.info};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   padding: 0.6rem 1rem;
 
@@ -41,5 +43,19 @@ export const Item = styled.li`
     background-color: ${({ theme }) => theme.colors.darkLight};
     transition: ${({ theme }) => theme.transition.default};
     color: ${({ theme }) => theme.colors.snow};
+    cursor: pointer;
   }
+`;
+
+export const Item = styled.li`
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  color: ${({ theme }) => theme.colors.info};
+`;
+
+export const Icon = styled.div`
+  font-size: ${({ theme }) => theme.fontSizes.default};
+  display: flex;
+  align-items: center;
+
+  margin-right: 0.275rem;
 `;

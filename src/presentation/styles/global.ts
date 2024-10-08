@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
+       
+
         background-color: ${({ theme }) => theme.colors.primary};
         color: ${({ theme }) => theme.colors.snow};
         font-family: 'Plus Jakarta Sans Variable';
@@ -47,7 +49,6 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         background: none;
         cursor: pointer;
-        color: inherit;
         border: 0;
         outline: 0;
     }

@@ -18,8 +18,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-       
-
         background-color: ${({ theme }) => theme.colors.primary};
         color: ${({ theme }) => theme.colors.snow};
         font-family: 'Plus Jakarta Sans Variable';

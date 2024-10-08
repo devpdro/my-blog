@@ -1,10 +1,18 @@
-import Navbar from "../../navbar/navbar";
+import { type ReactNode } from "react";
+
+import { Navbar } from "src/presentation/components";
+
 import * as S from "./default-styles";
 
-const DefaultLayout = () => {
+interface DefaultLayoutProps {
+  children: ReactNode;
+}
+
+const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <S.Container>
       <Navbar />
+      {children}
     </S.Container>
   );
 };

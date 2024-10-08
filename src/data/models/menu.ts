@@ -1,5 +1,7 @@
+import { type ReactNode } from "react";
+
 export interface MenuProps {
   name: string;
   link: string;
-  icon: React.ReactNode | string;
+  icon: ReactNode | string;
 }

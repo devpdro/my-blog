@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react'
 
-import { ChatButtom, Navbar } from 'src/presentation/components'
+import { Navbar, Whatsapp } from 'src/presentation/components'
 
 import * as S from './default-styles'
 
@@ -13,7 +13,7 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
     <S.Container>
       <Navbar />
       {children}
-      <ChatButtom />
+      <Whatsapp />
     </S.Container>
   )
 }

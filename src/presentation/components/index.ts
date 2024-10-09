@@ -1,4 +1,4 @@
-export { default as ChatButtom } from './chat-button/chat-button'
+export { default as Whatsapp } from './whatsapp/whatsapp'
 export * from './form'
 export * from './layout'
 export { default as Navbar } from './navbar/navbar'

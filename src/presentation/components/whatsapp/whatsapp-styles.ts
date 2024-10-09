@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { FaWhatsapp } from 'react-icons/fa'
+import { ICON } from 'src/presentation/assets'
 
 export const Container = styled.a`
   background-color: ${({ theme }) => theme.colors.success};
@@ -46,9 +46,11 @@ export const Container = styled.a`
   }
 `
 
-export const Icon = styled(FaWhatsapp)`
+export const Icon = styled(ICON.IconBrandWhatsapp)`
   color: ${({ theme }) => theme.colors.snow};
+  font-size: ${({ theme }) => theme.fontSizes.default};
 
+  stroke-width: 2;
   width: 2.2rem;
   height: 2.2rem;
 `

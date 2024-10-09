@@ -1,2 +1,2 @@
 export { default as Home } from './home/home'
-export { default as Publications } from './publications/publications'
+export { default as Articles } from './articles/articles'

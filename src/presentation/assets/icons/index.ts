@@ -1,5 +1,25 @@
-import { AiOutlineUser } from 'react-icons/ai'
+import {
+  IconBrandJavascript,
+  IconBrandReact,
+  IconBrandTypescript,
+  IconBrandCss3,
+  IconBrandNodejs,
+  IconBrandNextjs,
+  IconTestPipe,
+  IconCode,
+  IconSearch,
+  IconBrandWhatsapp,
+} from '@tabler/icons-react'
 
 export const ICON = {
-  AiOutlineUser,
+  IconBrandJavascript,
+  IconBrandReact,
+  IconBrandTypescript,
+  IconBrandCss3,
+  IconBrandNodejs,
+  IconBrandNextjs,
+  IconTestPipe,
+  IconCode,
+  IconSearch,
+  IconBrandWhatsapp,
 }

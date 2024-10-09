@@ -1,13 +1,12 @@
 import Link from 'next/link'
 
-import { ICON } from 'src/presentation/assets'
 import { MenuProps } from 'src/data/models'
 
 import * as S from './navbar-styles'
 
 const MENU: MenuProps[] = [
   { name: 'Sobre', link: '/', icon: '' },
-  { name: 'Artigos', link: '/publications', icon: '' },
+  { name: 'Artigos', link: '/articles', icon: '' },
   { name: 'Experiências', link: '/', icon: '' },
   { name: 'Projetos', link: '/', icon: '' },
   { name: 'Contato', link: '/', icon: '' },

@@ -1,3 +1,3 @@
-import { makePublications } from "src/main/factories/pages";
+import { makePublications } from 'src/main/factories/pages'
 
-export default makePublications;
+export default makePublications

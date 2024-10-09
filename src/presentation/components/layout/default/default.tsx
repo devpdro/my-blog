@@ -1,11 +1,11 @@
-import { type ReactNode } from "react";
+import { type ReactNode } from 'react'
 
-import { Navbar } from "src/presentation/components";
+import { Navbar } from 'src/presentation/components'
 
-import * as S from "./default-styles";
+import * as S from './default-styles'
 
 interface DefaultLayoutProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const DefaultLayout = ({ children }: DefaultLayoutProps) => {
@@ -14,7 +14,7 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
       <Navbar />
       {children}
     </S.Container>
-  );
-};
+  )
+}
 
-export default DefaultLayout;
+export default DefaultLayout

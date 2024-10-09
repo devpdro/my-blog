@@ -1,14 +1,14 @@
-import { MenuProps } from "src/data/models";
+import { MenuProps } from 'src/data/models'
 
-import * as S from "./publications-styles";
+import * as S from './publications-styles'
 
 const MENU: MenuProps[] = [
-  { name: "React", link: "/", icon: "" },
-  { name: "", link: "/", icon: "" },
-  { name: "", link: "/", icon: "" },
-  { name: "", link: "/", icon: "" },
-  { name: "", link: "/", icon: "" },
-];
+  { name: 'React', link: '/', icon: '' },
+  { name: '', link: '/', icon: '' },
+  { name: '', link: '/', icon: '' },
+  { name: '', link: '/', icon: '' },
+  { name: '', link: '/', icon: '' },
+]
 
 const Publications = () => {
   return (
@@ -18,7 +18,7 @@ const Publications = () => {
         <div key={link}>{item.name}</div>
       ))}
     </S.Container>
-  );
-};
+  )
+}
 
-export default Publications;
+export default Publications

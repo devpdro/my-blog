@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -69,6 +69,6 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin-bottom: 0;
     }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

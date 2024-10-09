@@ -1,24 +1,21 @@
-import { type ReactNode } from "react";
-import { ThemeProvider as Provider } from "styled-components";
+import { type ReactNode } from 'react'
+import { ThemeProvider as Provider } from 'styled-components'
 
-import GlobalStyles from "src/presentation/styles/global";
-import * as themes from "src/presentation/styles/themes";
+import GlobalStyles from 'src/presentation/styles/global'
+import * as themes from 'src/presentation/styles/themes'
 
-type ThemeType = keyof typeof themes;
+type ThemeType = keyof typeof themes
 
 interface ThemeProviderProps {
-  currentTheme?: ThemeType;
-  children: ReactNode;
+  currentTheme?: ThemeType
+  children: ReactNode
 }
 
-export const ThemeProvider = ({
-  currentTheme = "dark",
-  children,
-}: ThemeProviderProps) => {
+export const ThemeProvider = ({ currentTheme = 'dark', children }: ThemeProviderProps) => {
   return (
     <Provider theme={themes[currentTheme]}>
       <GlobalStyles />
       {children}
     </Provider>
-  );
-};
+  )
+}

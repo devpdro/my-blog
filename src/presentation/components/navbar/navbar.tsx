@@ -1,17 +1,17 @@
-import Link from "next/link";
+import Link from 'next/link'
 
-import { ICON } from "src/presentation/assets";
-import { MenuProps } from "src/data/models";
+import { ICON } from 'src/presentation/assets'
+import { MenuProps } from 'src/data/models'
 
-import * as S from "./navbar-styles";
+import * as S from './navbar-styles'
 
 const MENU: MenuProps[] = [
-  { name: "Início", link: "/", icon: "" },
-  { name: "Publicações", link: "/publications", icon: "" },
-  { name: "Quem sou eu?", link: "/", icon: <ICON.AiOutlineUser /> },
-  { name: "Cursos", link: "/", icon: "" },
-  { name: "Contato", link: "/", icon: "" },
-];
+  { name: 'Início', link: '/', icon: '' },
+  { name: 'Publicações', link: '/publications', icon: '' },
+  { name: 'Quem sou eu?', link: '/', icon: <ICON.AiOutlineUser /> },
+  { name: 'Cursos', link: '/', icon: '' },
+  { name: 'Contato', link: '/', icon: '' },
+]
 
 const Navbar = () => {
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
         ))}
       </S.MenuGroup>
     </S.Container>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

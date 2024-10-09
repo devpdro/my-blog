@@ -1,3 +1,3 @@
-import { Home } from "src/presentation/pages";
+import { Home } from 'src/presentation/pages'
 
-export const makeHome = () => <Home />;
+export const makeHome = () => <Home />

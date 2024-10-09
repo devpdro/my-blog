@@ -10,6 +10,7 @@ const darkTheme = {
     info: '#B9C4CC',
     error: '#D6103B',
     success: '#00AF7D',
+    greenLight: '#33C39C',
     icon: '#E1E1E6',
   },
   fontSizes: {

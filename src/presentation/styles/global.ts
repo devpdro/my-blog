@@ -23,16 +23,16 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Plus Jakarta Sans Variable';
     }
     
-  input,
-  button {
-    border: 0;
-    outline: 0;
-    background: none;
-    outline: none;
-    font-family: 'Plus Jakarta Sans Variable';
-    line-height: 1.48;
-  }
-  
+    input,
+    button {
+        border: 0;
+        outline: 0;
+        background: none;
+        outline: none;
+        font-family: 'Plus Jakarta Sans Variable';
+        line-height: 1.48;
+    }
+    
     h1,
     h2,
     h3,

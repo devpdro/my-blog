@@ -1,8 +1,9 @@
-import { InputHTMLAttributes, type ReactNode } from 'react'
+import { type InputHTMLAttributes, type ReactNode } from 'react'
 
 import * as S from './input-styles'
 
 type InputVariants = 'primary'
+
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   variant?: InputVariants
   placeholder?: string

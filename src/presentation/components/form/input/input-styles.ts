@@ -12,7 +12,6 @@ const variants = {
 
     width: 100%;
     padding: 0.5rem 2.8rem;
-  
 
     &:hover {
       border: 1px solid ${({ theme }) => theme.colors.secondary};

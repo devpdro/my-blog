@@ -11,11 +11,9 @@ interface ThemeProviderProps {
   children: ReactNode
 }
 
-export const ThemeProvider = ({ currentTheme = 'dark', children }: ThemeProviderProps) => {
-  return (
-    <Provider theme={themes[currentTheme]}>
-      <GlobalStyles />
-      {children}
-    </Provider>
-  )
-}
+export const ThemeProvider = ({ currentTheme = 'dark', children }: ThemeProviderProps) => (
+  <Provider theme={themes[currentTheme]}>
+    <GlobalStyles />
+    {children}
+  </Provider>
+)

@@ -5,6 +5,7 @@ const darkTheme = {
     secondary: '#8234E9',
     snow: '#FFF',
     darkHigh: '#000000',
+    darkMedium: '#121214',
     darkLight: '#29292E',
     info: '#B9C4CC',
     error: '#D6103B',
@@ -14,7 +15,7 @@ const darkTheme = {
   fontSizes: {
     extraSmall: '0.7rem',
     small: '0.9rem',
-    default: '1.4rem',
+    default: '1.2rem',
     medium: '2rem',
     large: '3rem',
   },

@@ -6,29 +6,27 @@ import { MenuProps } from 'src/data/models'
 import * as S from './navbar-styles'
 
 const MENU: MenuProps[] = [
-  { name: 'Início', link: '/', icon: '' },
-  { name: 'Publicações', link: '/publications', icon: '' },
-  { name: 'Quem sou eu?', link: '/', icon: '' },
-  { name: 'Cursos', link: '/', icon: '' },
+  { name: 'Sobre', link: '/', icon: '' },
+  { name: 'Artigos', link: '/publications', icon: '' },
+  { name: 'Experiências', link: '/', icon: '' },
+  { name: 'Projetos', link: '/', icon: '' },
   { name: 'Contato', link: '/', icon: '' },
 ]
 
-const Navbar = () => {
-  return (
-    <S.Container>
-      <S.Logo>PORTFÓLIO</S.Logo>
-      <S.MenuGroup>
-        {MENU.map((item, link) => (
-          <Link key={link} href={item.link}>
-            <S.Menu>
-              <S.Icon>{item.icon}</S.Icon>
-              <S.Item>{item.name}</S.Item>
-            </S.Menu>
-          </Link>
-        ))}
-      </S.MenuGroup>
-    </S.Container>
-  )
-}
+const Navbar = () => (
+  <S.Container>
+    <S.Logo>/* V.H */</S.Logo>
+    <S.MenuGroup>
+      {MENU.map((item, link) => (
+        <Link key={link} href={item.link}>
+          <S.Menu>
+            <S.Icon>{item.icon}</S.Icon>
+            <S.Item>{item.name}</S.Item>
+          </S.Menu>
+        </Link>
+      ))}
+    </S.MenuGroup>
+  </S.Container>
+)
 
 export default Navbar

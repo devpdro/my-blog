@@ -22,14 +22,14 @@ const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.colors.snow};
         font-family: 'Plus Jakarta Sans Variable';
     }
-
-
+    
+  input,
   button {
     border: 0;
+    outline: 0;
     background: none;
     outline: none;
-    font:
-      1.6rem 'Plus Jakarta Sans Variable';
+    font-family: 'Plus Jakarta Sans Variable';
     line-height: 1.48;
   }
   

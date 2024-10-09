@@ -2,17 +2,20 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1080px;
-  margin: 0 auto;
+  padding: 0 2rem;
+  margin: 1.4rem auto;
 `
 
 export const MenuGroup = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
-  gap: 0.3rem;
+  gap: 0.2rem;
+  margin-top: 0.8rem;
 `
 
-export const Menu = styled.ul`
+export const Menu = styled.div`
   background-color: ${({ theme }) => theme.colors.darkHigh};
   border-radius: ${({ theme }) => theme.radii.large};
   border: 1px solid ${({ theme }) => theme.colors.darkLight};
@@ -29,7 +32,7 @@ export const Menu = styled.ul`
   }
 `
 
-export const Item = styled.li`
+export const Item = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.extraSmall};
   font-weight: ${({ theme }) => theme.fontWeights.default};
 `

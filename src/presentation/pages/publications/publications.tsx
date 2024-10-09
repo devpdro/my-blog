@@ -7,8 +7,10 @@ import {
   IconBrandNextjs,
   IconTestPipe,
   IconCode,
+  IconSearch,
 } from '@tabler/icons-react'
 
+import { Input } from 'src/presentation/components'
 import { MenuProps } from 'src/data/models'
 
 import * as S from './publications-styles'
@@ -28,20 +30,19 @@ const MENU: MenuProps[] = [
   { name: 'Dev', link: '/', icon: <IconCode color="#209FBE" size={24} strokeWidth={1} /> },
 ]
 
-const Publications = () => {
-  return (
-    <S.Container>
-      <h1>Pesquisar por tópicos</h1>
-      <S.MenuGroup>
-        {MENU.map((item, link) => (
-          <S.Menu key={link}>
-            <S.Icon>{item.icon}</S.Icon>
-            <S.Item>{item.name}</S.Item>
-          </S.Menu>
-        ))}
-      </S.MenuGroup>
-    </S.Container>
-  )
-}
+const Publications = () => (
+  <S.Container>
+    <Input variant="primary" placeholder="Buscar" icon={<IconSearch size={24} strokeWidth={1} />} />
+
+    <S.MenuGroup>
+      {MENU.map((item, link) => (
+        <S.Menu key={link}>
+          <S.Icon>{item.icon}</S.Icon>
+          <S.Item>{item.name}</S.Item>
+        </S.Menu>
+      ))}
+    </S.MenuGroup>
+  </S.Container>
+)
 
 export default Publications

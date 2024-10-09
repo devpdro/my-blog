@@ -8,7 +8,7 @@ import * as S from './navbar-styles'
 const MENU: MenuProps[] = [
   { name: 'Início', link: '/', icon: '' },
   { name: 'Publicações', link: '/publications', icon: '' },
-  { name: 'Quem sou eu?', link: '/', icon: <ICON.AiOutlineUser /> },
+  { name: 'Quem sou eu?', link: '/', icon: '' },
   { name: 'Cursos', link: '/', icon: '' },
   { name: 'Contato', link: '/', icon: '' },
 ]
@@ -16,7 +16,7 @@ const MENU: MenuProps[] = [
 const Navbar = () => {
   return (
     <S.Container>
-      <S.Logo>Blog</S.Logo>
+      <S.Logo>PORTFÓLIO</S.Logo>
       <S.MenuGroup>
         {MENU.map((item, link) => (
           <Link key={link} href={item.link}>

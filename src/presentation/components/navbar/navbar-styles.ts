@@ -23,14 +23,13 @@ export const MenuGroup = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  gap: 0.3rem border;
+  gap: 0.3rem;
 `
 
 export const Menu = styled.ul`
   border-radius: ${({ theme }) => theme.radii.default};
   display: flex;
   align-items: center;
-  justify-content: center;
 
   padding: 0.6rem 1rem;
 
